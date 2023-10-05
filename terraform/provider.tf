@@ -11,9 +11,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "tf-notifier-state-v1"
+    bucket         = "tf-notifier-state-bia"
     key            = "terraform.tfstate"
-    dynamodb_table = "tf-notifier-state-v1"
+    dynamodb_table = "tf-notifier-state-bia"
     region         = "us-east-1"
   }
 
